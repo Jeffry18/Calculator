@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+
+        <div class="calculator">
+            <input type="text" placeholder="0" id="result" class="display" readonly />
+    
+            <div class="buttons">
+                <!-- Row 1 -->
+                <button onclick="calclear()" class="button clear">AC</button>
+                
+                <!-- Row 2 -->
+                <button onclick="displaycontent('7')" class="button number">7</button>
+                <button onclick="displaycontent('8')" class="button number">8</button>
+                <button onclick="displaycontent('9')" class="button number">9</button>
+                <button onclick="displaycontent('/')" class="button operator">/</button>
+                
+                <!-- Row 3 -->
+                <button onclick="displaycontent('4')" class="button number">4</button>
+                <button onclick="displaycontent('5')" class="button number">5</button>
+                <button onclick="displaycontent('6')" class="button number">6</button>
+                <button onclick="displaycontent('*')" class="button operator">*</button>
+                
+                <!-- Row 4 -->
+                <button onclick="displaycontent('1')" class="button number">1</button>
+                <button onclick="displaycontent('2')" class="button number">2</button>
+                <button onclick="displaycontent('3')" class="button number">3</button>
+                <button onclick="displaycontent('-')" class="button operator">-</button>
+                
+                <!-- Row 5 -->
+                <button onclick="backspace()" class="button back">&#9003</button>
+                <button onclick="displaycontent('0')" class="button number">0</button>
+                <button onclick="calresult()" class="button operator">=</button>
+                <button onclick="displaycontent('+')" class="button operator">+</button>
+            </div>
+        </div>
+    
+    
+</body>
+
+<script src="./main.js"></script>
+
+</html>
+
